@@ -5,8 +5,8 @@ This is the basic implementation of our submission in ISSTA 2023: **Mapping APIs
   * [Description](#description)
   * [Project Structure](#project-structure)
   * [Datasets](#datasets)
-  * [Reproducibility:](#reproducibility-)
-    + [Environment:](#environment-)
+  * [Reproducibility](#reproducibility-)
+    + [Environment](#environment-)
     + [Preparation](#preparation)
 
 ## Description
