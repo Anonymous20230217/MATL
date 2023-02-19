@@ -55,10 +55,16 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 
 We used `2`  datasets, on python and java2swift respectively. 
 
-| Frameworks |        Tensorflow        | PyTorch  |  MXNet | CNTK |
+
+| Frameworks |        Tensorflow        | PyTorch  |  MXNet | CNTK | 
 | :---: |        :---:        | :---:  |  :---: | :---: |
 | Tensorflow |            -             |    175   |    152 | 123  |
 | PyTorch    |           113            |     -    |    92  | 67   |
+
+| class |        ArrayList        | LinkedList  |  HashSet | HashMap| Calendar|Collections|Arrays|String|Interger|Throwable|Thread|Class|File|PrintStream|InputStream|
+| :---: |        :---:        | :---:  |  :---: | :---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
+| num |        17        | 23  |  8 | 12 |22|15|7|41|28|5|11|11|29|23|3|
+|Total|255|
 
 
 ## Reproducibility
