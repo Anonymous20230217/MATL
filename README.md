@@ -101,7 +101,7 @@ wordninja          2.0.0
 
 ### Preparation
 
-The detail executing steps of `Matl` (README files) can be found in the folder respectively.
+If use MATL, the pre-processing of data from natural language is needed.
 
 
 
