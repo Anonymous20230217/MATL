@@ -8,7 +8,6 @@ This is the basic implementation of our submission in ISSTA 2023: **Mapping APIs
   * [Reproducibility:](#reproducibility-)
     + [Environment:](#environment-)
     + [Preparation](#preparation)
-  * [Contact](#contact)
 
 ## Description
 
@@ -69,39 +68,32 @@ We used `2`  datasets, on python and java2swift respectively.
 
 ## Reproducibility
 
-We have published an full version of PLELog (including HDFS log dataset, glove word embdding as well as a trained model) in Zenodo, please find the project from the zenodo badge at the beginning.
+MATL have 2 phase: pretrain and finetune, the code, pretrained model and vectors pretrained by GraphCodeBert have been published.
 
 ### Environment
 
 **Note:** 
-- We attach great importance to the reproducibility of `PLELog`. Here we list some of the key packages to reproduce our results. However, as discussed in [issue#14](https://github.com/YangLin-George/PLELog/issues/14), please refer to the `requirements.txt` file for package installation.
-
-- According to [issue#16](https://github.com/YangLin-George/PLELog/issues/16), there seems to have some problem with suggested hdbscan version, if your environment has such an error, please refer to the issue for support. Great thanks for this valuable issue!
+- We attach great importance to the reproducibility of `MATL`. Here we list some of the key packages to reproduce our results. Also please refer to the `requirements.txt` file for package installation.
 
 **Key Packages:**
 
-
-PyTorch v1.10.1
-
-python v3.8.3
-
-hdbscan v0.8.27
-
-overrides v6.1.0
-
-**scikit-learn v0.24**
-
-tqdm
-
-regex
-
-[Drain3](https://github.com/IBM/Drain3)
+Package            Version
+------------------ ------------
+h5py               3.7.0
+ipdb               0.13.9
+matplotlib         3.6.0
+nltk               3.7
+numpy              1.23.1
+regex              2022.7.25
+tables             3.7.0
+torch              1.12.0+cu116
+torchaudio         0.12.0+cu116
+torchvision        0.13.0+cu116
+tqdm               4.64.0
+wordninja          2.0.0
 
 
-hdbscan and overrides are not available while using anaconda, try using pip or:
-`conda install -c conda-forge pkg==ver` where `pkg` is the target package and `ver` is the suggested version.
 
-**Please be noted:** Since there are some known issue about joblib, scikit-learn > 0.24 is not supported here. We'll keep watching. 
 
 ### Preparation
 
@@ -123,16 +115,3 @@ To those who are interested in applying PLELog on their log data, please refer t
 - **Step 2:** Move target log file (plain text, each raw contains one log message) into the folder of step 1.
 - **Step 3:** Create a new dataloader class implementing `BasicLoader`. 
 - **Step 4:** Go to `preprocessing/Preprocess.py` and add your new log data into acceptable variables.
-
-## Contact
-
-We are happy to see `PLELog` being applied in the real world and willing to contribute to the community. Feel free to contact us if you have any question!
-Authors information:
-
-| Name          | Email Address          | 
-| ------------- | ---------------------- | 
-| Lin Yang      | linyang@tju.edu.cn     |
-| Junjie Chen * | junjiechen@tju.edu.cn  |
-| Weijing Wang  | wangweijing@tju.edu.cn |
-
-\* *corresponding author*
