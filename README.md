@@ -29,8 +29,10 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 |	├─train.py      # the train file
 |	├─eval.py      # the test file
 |	├─utils.py      # the util
-├─config      # Configuration for Drain
-├─entities    # Instances for log data and DL model.
+├─pretrain      # pretrain code
+├─Dataset    # the dataset on DL Framework and Java2swift.
+|	├─DL2DL      # Tensorflow, Torch, CNTK && MXNet
+|		├─DL2DL      # Tensorflow, Torch, CNTK && MXNet
 ├─utils
 ├─logs        
 ├─datasets    
