@@ -38,16 +38,6 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 |	├─java2swift      # dataset of java2swift
 |		├─mappings.xlsx      # the mapping relationship of java to swift
 |		├─'*.txt'      # the pre-processed results of corresponding APIs
-├─utils
-├─logs        
-├─datasets    
-├─models      # Attention-based GRU and HDBSCAN Clustering.
-├─module      # Anomaly detection modules, including classifier, Attention, etc.
-├─outputs           
-├─parsers     # Drain parser.
-├─preprocessing # preprocessing code, data loaders and cutters.
-├─representations # Log template and sequence representation.
-└─util        # Vocab for DL model and some other common utils.
 ```
 
 ## Datasets
@@ -105,24 +95,7 @@ wordninja          2.0.0
 
 
 
-
 ### Preparation
 
-You need to follow these steps to **completely** run `PLELog`.
-- **Step 1:** To run `PLELog` on different log data, create a directory under `datasets` folder **using unique and memorable name**(e.g. HDFS and BGL). `PLELog` will try to find the related files and create logs and results according to this name.
-- **Step 2:** Move target log file (plain text, each raw contains one log message) into the folder of step 1.
-- **Step 3:** Download `glove.6B.300d.txt` from [Stanford NLP word embeddings](https://nlp.stanford.edu/projects/glove/), and put it under `datasets` folder.
-- **Step 4:** Run `approaches/PLELog.py` (make sure it has proper parameters). You can find the details about Drain parser from [IBM](https://github.com/IBM/Drain3).
+The detail executing steps of `Matl` (README files) can be found in the folder respectively.
 
-
-**Note:** Since log can be very different, here in this repository, we only provide the processing approach of HDFS and BGL w.r.t our experimental setting.
-
-
-## Anomaly Detection
-
-To those who are interested in applying PLELog on their log data, please refer to `BasicLoader` abstract class in preprocessing/BasicLoader.py` for more instructions.
-
-- **Step 1:** To run `PLELog` on different log data, create a directory under `datasets` folder **using unique and memorable name**(e.g. HDFS and BGL). `PLELog` will try to find the related files and create logs and results according to this name.
-- **Step 2:** Move target log file (plain text, each raw contains one log message) into the folder of step 1.
-- **Step 3:** Create a new dataloader class implementing `BasicLoader`. 
-- **Step 4:** Go to `preprocessing/Preprocess.py` and add your new log data into acceptable variables.
