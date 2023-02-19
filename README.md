@@ -32,7 +32,13 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 ├─pretrain      # pretrain code
 ├─Dataset    # the dataset on DL Framework and Java2swift.
 |	├─DL2DL      # Tensorflow, Torch, CNTK && MXNet
-|		├─DL2DL      # Tensorflow, Torch, CNTK && MXNet
+|		├─mappings.xlsx      # the mapping relationship from one Framework to Another
+|		├─"frameworkname"_sig.txt      # the pre-processed signatures of framework APIs
+|		├─"frameworkname"_desc.txt      # the pre-processed document of framework APIs
+|		├─"frameworkname"_name.txt      # the pre-processed name of framework APIs
+|	├─java2swift      # dataset of java2swift
+|		├─mappings.xlsx      # the mapping relationship of java to swift
+|		├─'*.txt'      # the pre-processed results of corresponding APIs
 ├─utils
 ├─logs        
 ├─datasets    
@@ -47,13 +53,13 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 
 ## Datasets
 
-We used `2` open-source log datasets, HDFS and BGL. 
-In the future, we are planning on testing `PLELog` on more log data.
+We used `2`  datasets, on python and java2swift respectively. 
 
-| Software System | Description                        | Time Span  | # Messages | Data Size | Link                                                      |
-|       ---       |           ----                     |    ----    |    ----    |  ----     |                ---                                        |
-| HDFS            | Hadoop distributed file system log | 38.7 hours | 11,175,629 | 1.47 GB   | [LogHub](https://github.com/logpai/loghub)                |
-| BGL             | Blue Gene/L supercomputer log      | 214.7 days | 4,747,963  | 708.76MB  | [Usenix-CFDR Data](https://www.usenix.org/cfdr-data#hpc4) |
+
+| Frameworks | Tensorflow                        | PyTorch  |  MXNet| CNTK|
+|       Tensorflow      |           -                    |    175   |    152    | 123 |
+| PyTorch           | 113 |  - | 92 | 67 |
+
 
 ## Reproducibility
 
