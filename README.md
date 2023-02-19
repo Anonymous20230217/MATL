@@ -5,15 +5,15 @@ This is the basic implementation of our submission in ISSTA 2023: **Mapping APIs
   * [Description](#description)
   * [Project Structure](#project-structure)
   * [Datasets](#datasets)
-  * [Reproducibility](#reproducibility-)
-    + [Environment](#environment-)
+  * [Reproducibility:](#reproducibility-)
+    + [Environment:](#environment-)
     + [Preparation](#preparation)
 
 ## Description
 
 `Matl` is a novel appraoch which leverages the transfer learning technique to learn the semantic embeddings of source code implementations from large-scale open-source repositories and then transfers the learned model to facilitate the mapping of APIs.
 Firstly, we conduct an extensive study to explore their performance for mapping APIs in dynamic-typed languages. `MATL` is inspired by the insights of the study. In particular, the source code implementations of APIs can significantly improve the effectiveness of API mapping.
-To evaluation study for the performance of Matl with state-of-the-art approaches demonstrate that Matl is indeed effective as it improves the state-of-the-art approach.
+To evaluation study for the performance of Matl with state-of-the-art approaches demonstrate that Matl is indeed effective as it improves the state-of-the-art approach.
 
 ## Project Structure
 
@@ -38,6 +38,10 @@ To evaluation study for the performance of Matl with state-of-the-art approaches
 |	├─java2swift      # dataset of java2swift
 |		├─mappings.xlsx      # the mapping relationship of java to swift
 |		├─'*.txt'      # the pre-processed results of corresponding APIs
+├─java jdt parser    # the parser to obtain java source code.
+|	├─ParseJavaFile.java      # the tool
+|	├─java_files_path.txt      #the java source code path
+├─baselines      # the comparsion approaches
 ```
 
 ## Datasets
@@ -98,4 +102,7 @@ wordninja          2.0.0
 ### Preparation
 
 The detail executing steps of `Matl` (README files) can be found in the folder respectively.
+
+
+
 
