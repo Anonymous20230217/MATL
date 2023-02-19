@@ -78,18 +78,29 @@ MATL have 2 phase: pretrain and finetune, the code, pretrained model and vectors
 **Key Packages:**
 
 Package            Version
------------------- ------------
+
 h5py               3.7.0
+
 ipdb               0.13.9
+
 matplotlib         3.6.0
+
 nltk               3.7
+
 numpy              1.23.1
+
 regex              2022.7.25
+
 tables             3.7.0
+
 torch              1.12.0+cu116
+
 torchaudio         0.12.0+cu116
+
 torchvision        0.13.0+cu116
+
 tqdm               4.64.0
+
 wordninja          2.0.0
 
 
