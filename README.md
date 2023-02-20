@@ -31,6 +31,7 @@ To evaluation study for the performance of Matl with state-of-the-art approache
 ├─pretrain      # pretrain code
 ├─Dataset    # the dataset on DL Framework and Java2swift.
 |	├─DL2DL      # Tensorflow, Torch, CNTK && MXNet
+|		├─dict      # the folder containing tf, torch, MXnet and CNTK API docunments and signatures
 |		├─mappings.xlsx      # the mapping relationship from one Framework to Another
 |		├─"frameworkname"_sig.txt      # the pre-processed signatures of framework APIs
 |		├─"frameworkname"_desc.txt      # the pre-processed document of framework APIs
