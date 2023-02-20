@@ -1,4 +1,4 @@
-# Deep Code Search
+# Deep Code Search (This part of repository is ALmostly samed as 'https://github.com/guxd/deep-code-search')
 
 PyTorch implementation of [Deep Code Search](https://guxd.github.io/papers/deepcs.pdf).
 
