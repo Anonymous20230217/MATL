@@ -104,6 +104,11 @@ wordninja          2.0.0
 
 If use MATL, the pre-processing of data from natural language is needed.
 
+- **Step 1:** To run the pretrain phase and get the model in pretrain/model 
+- **Step 2:** Move the model to appraoches/preTrain_model and modify the code in appraoches/train.py in Line 95
+- **Step 3:** To run the finr tune phase and get the model in approaches/model. 
+
+
 
 
 
