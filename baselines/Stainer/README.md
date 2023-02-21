@@ -16,8 +16,9 @@ In GroumNode.py, line 637 and 638 need to be modified as the the file need to be
 
 ## EM_algorithm
 The line 44 and 45 represent the corresponding sentences of two language, which is both a list of string lists.
+
 For example:
-[['This', 'is', 'Stainer']] and [['这', '是', 'Stainer']]
+`[['This', 'is', 'Stainer']]` and `[['这', '是', 'Stainer']]`
 
 
 
