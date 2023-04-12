@@ -1,4 +1,4 @@
-# Stainer
+# StaMiner
  
 Due to the copyright relationship with the enterprise, we are unable to disclose this part of data and its related code, so we public the core algorithm and Groum reproduction tool for reference.
 
