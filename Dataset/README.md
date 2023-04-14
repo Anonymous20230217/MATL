@@ -7,5 +7,9 @@ In which the file "mapping_list.xlsx" demonstrates the basic correspondence, and
 ├─APIxDLF  # APIxDLF dataset.
 |	├─tf_API_1200.csv  # API widely used under the Tf framework.
 |	├─torch_API_933.csv  # API widely used under the Pytorch framework.
+|	├─mapping_list.xlsx  # The MApping pairs
+|	├─...  # The details for each API
 ├─java2swift  # Deep-diving dataset.
+|	├─mapping_list.xlsx  # The MApping pairs
+|	├─...  # The details for each API
 ```
